@@ -18,12 +18,31 @@
         <button onclick="setLevel(this)" data-size="12" data-mines="32">Expert</button>
     </div>
 
+    <div class="time">
+        <span class="beginner"></span>
+        <span class="medium"></span>
+        <span class="expert"></span>
+    </div>
+
+    <div class="smiley" onclick="onInit()"><button>😃</button>
+    </div>
+
+    <div class="hints">
+        <button onclick="hint(this)">💡</button>
+        <button onclick="hint(this)">💡</button>
+        <button onclick="hint(this)">💡</button>
+    </div>
+
     <div class="board">
         <!-- <table>
     <tbody>
         <td></td>
     </tbody>
 </table> -->
+    </div>
+
+    <div class="lives">
+        <h3>You got <span></span> lives.</h3>
     </div>
 
     <div class="modal">

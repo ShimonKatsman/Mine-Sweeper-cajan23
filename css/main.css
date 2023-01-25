@@ -15,6 +15,14 @@ body {
     margin-bottom: 20px;
 }
 
+.smiley {
+    margin-bottom: 20px;
+}
+
+.hints {
+    margin-bottom: 20px;
+}
+
 table,
 td {
     border: 1px solid black;
@@ -22,15 +30,22 @@ td {
 }
 
 td {
-    width: 20px;
-    height: 20px;
+    width: 27px;
+    height: 27px;
+    /* position:fixed; */
+    /* z-index: 0; */
 }
 
 .closed {
     position: absolute;
-    width: 22px;
-    height: 22px;
+    /* position:fixed; */
+    opacity: 30%;
+    width: 29px;
+    height: 29px;
     background-color: gray;
+    margin-top: -4.8px;
+    /* z-index: 1; */
+    /* top: -1px; */
 }
 
 .modal {
