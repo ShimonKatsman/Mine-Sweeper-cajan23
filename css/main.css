@@ -1,0 +1,46 @@
+/*בס"ד*/
+
+header {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+body {
+    min-height: 100%;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.levels {
+    margin-bottom: 20px;
+}
+
+table,
+td {
+    border: 1px solid black;
+    margin: auto;
+}
+
+td {
+    width: 20px;
+    height: 20px;
+}
+
+.closed {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: gray;
+}
+
+.modal {
+    display: none;
+    border: 5px solid black;
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* footer{
+    
+} */

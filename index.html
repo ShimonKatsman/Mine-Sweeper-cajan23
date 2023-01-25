@@ -1,0 +1,39 @@
+<!--בס"ד-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <header>בס"ד</header>
+
+    <div class="levels">
+        <h3>Choose level:</h3>
+        <button onclick="setLevel(this)" data-size="4" data-mines="2">Beginner</button>
+        <button onclick="setLevel(this)" data-size="8" data-mines="14">Medium</button>
+        <button onclick="setLevel(this)" data-size="12" data-mines="32">Expert</button>
+    </div>
+
+    <div class="board">
+        <!-- <table>
+    <tbody>
+        <td></td>
+    </tbody>
+</table> -->
+    </div>
+
+    <div class="modal">
+        <h2><span></span></h2>
+        <button onclick="onInit()">Restart</button>
+    </div>
+
+    <footer>Shimon Katsman</footer>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
