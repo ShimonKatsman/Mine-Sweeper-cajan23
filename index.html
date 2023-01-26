@@ -11,20 +11,30 @@
 <body onload="onInit()">
     <header>בס"ד</header>
 
+    <div class="dark-mode"><button onclick="toggleDarkMode()">Toggle Dark Mode</button></div>
+
     <div class="levels">
         <h3>Choose level:</h3>
-        <button onclick="setLevel(this)" data-size="4" data-mines="2">Beginner</button>
-        <button onclick="setLevel(this)" data-size="8" data-mines="14">Medium</button>
-        <button onclick="setLevel(this)" data-size="12" data-mines="32">Expert</button>
+        <button class="Beginner" onclick="setLevel(this)" data-size="4" data-mines="2">Beginner</button>
+        <button class="Medium" onclick="setLevel(this)" data-size="8" data-mines="14">Medium</button>
+        <button class="Expert" onclick="setLevel(this)" data-size="12" data-mines="32">Expert</button>
+    </div>
+
+    <div class="manual">
+        <button onclick="manuallyCreate()">Manually Create</button>
+        <button class="set" onclick="set()">Set</button>
     </div>
 
     <div class="time">
-        <span class="beginner"></span>
-        <span class="medium"></span>
-        <span class="expert"></span>
+        Best Times: <span class="beginner"></span>s |
+        <span class="medium"></span>s |
+        <span class="expert"></span>s
     </div>
 
-    <div class="smiley" onclick="onInit()"><button>😃</button>
+    <div>
+        <div class="mine-counter">Mines: <span>00</span></div>
+        <button class="smiley" onclick="onInit()">😃</button>
+        <div class="timer">Time: <span>0.000</span></div>
     </div>
 
     <div class="hints">
@@ -33,12 +43,30 @@
         <button onclick="hint(this)">💡</button>
     </div>
 
+    <div class="mega-hint"><button onclick="megaHint()">Mega Hint</button></div>
+
     <div class="board">
         <!-- <table>
     <tbody>
         <td></td>
     </tbody>
 </table> -->
+    </div>
+
+    <div class="exterminator">
+        <button onclick="exterminate()">🤖</button>
+    </div>
+
+    <div class="undo">
+        <button onclick="undo()">UNDO</button>
+    </div>
+
+    <div class="safe-click">
+        <h4>You got
+            <span>3</span> safe clicks available:
+            <button onclick="safeClick()">Safe Click</button>
+        </h4>
+
     </div>
 
     <div class="lives">

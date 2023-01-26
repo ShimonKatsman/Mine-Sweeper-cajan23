@@ -1,26 +1,139 @@
 /*בס"ד*/
 
+/* * {
+    /* colo:rgb(255, 255, 255)
+    color: rgb((255 - color.r), (255 - color.g), (255 - color.b));
+    'rgb(' + (255 - color.r) + ', ' + (255 - color.g) + ', ' + (255 - color.b) + ')'
+    /*} */
+
+/* *{
+} */
+/* button{
+    color: black;
+} */
+
+/* h2{
+    mix-blend-mode: difference;
+} */
+
 header {
     text-align: right;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 body {
+    /* mix-blend-mode: difference; */
+    /* color:white; */
+    /* background-color: black; */
+    /* mix-blend-mode: difference; */
+    /* filter: invert(1); */
     min-height: 100%;
     text-align: center;
-    /* background-color: aqua; */
+    /* background-color: white; */
+}
+
+.invert {
+    filter: invert(1);
+    background-color: black;
 }
 
 .levels {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
+
+.levels h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Beginner {
+    background-color: rgb(5, 241, 5);
+    /* margin-left: 20px; */
+}
+
+.Beginner:active {
+    background-color: rgb(5, 148, 5);
+    /* margin-left: 20px; */
+}
+
+.Medium {
+    background-color: yellow;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+}
+
+.Medium:active {
+    background-color: rgb(163, 163, 4);
+    /* margin-left: 15px;
+    margin-right: 15px; */
+}
+
+.Expert {
+    background-color: rgb(248, 36, 36);
+}
+
+.Expert:active {
+    background-color: rgb(158, 21, 21);
+}
+
+.beginner {
+    background-color: rgb(5, 241, 5);
+    /* margin-left: 20px; */
+}
+
+.medium {
+    background-color: yellow;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+}
+
+.expert {
+    background-color: rgb(248, 36, 36);
+}
+
+.manual {
+    margin-bottom: 10px;
+}
+
+.manual .set {
+    display: none;
+}
+
+.mine-counter {
+    display: inline-block;
+    margin-left: -72px;
+    min-width: 100px;
+}
+
+/* .mine-counter span{
+    font-variant-numeric: tabular-nums;
+} */
 
 .smiley {
-    margin-bottom: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    /* margin-right: 20px; */
+    margin-left: 10px;
 }
 
+.timer {
+    display: inline-block;
+    /* font-variant-numeric: tabular-nums; */
+    margin-right: -110px;
+    min-width: 150px;
+}
+
+/* .timer span{
+    font-variant-numeric: tabular-nums;
+} */
+
 .hints {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.mega-hint {
+    margin-bottom: 10px;
 }
 
 table,
@@ -39,7 +152,7 @@ td {
 .closed {
     position: absolute;
     /* position:fixed; */
-    opacity: 30%;
+    /* opacity: 30%; */
     width: 29px;
     height: 29px;
     background-color: gray;
@@ -48,14 +161,34 @@ td {
     /* top: -1px; */
 }
 
+.closed:active {
+    background-color: lightgray;
+}
+
+.exterminator {
+    margin-top: 10px;
+}
+
+.undo {
+    margin-top: 10px;
+}
+
 .modal {
     display: none;
     border: 5px solid black;
     width: 100px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-/* footer{
-    
-} */
+.safe-click {
+    margin-top: -15px;
+}
+
+.lives {
+    margin-top: -15px;
+}
+
+footer {
+    margin-top: -10px;
+}
