@@ -95,8 +95,21 @@ body {
     margin-bottom: 10px;
 }
 
-.manual .set {
+.mode {
+    background-color: rgb(111, 111, 244);
+}
+
+.mode:active {
+    background-color: rgb(58, 58, 204);
+}
+
+.set {
     display: none;
+    background-color: rgb(69, 226, 247);
+}
+
+.set:active {
+    background-color: rgb(14, 175, 197);
 }
 
 .mine-counter {
@@ -154,9 +167,10 @@ td {
     /* position:fixed; */
     /* opacity: 30%; */
     width: 29px;
-    height: 29px;
+    height: 29.4px;
     background-color: gray;
     margin-top: -4.8px;
+    margin-left: -1px;
     /* z-index: 1; */
     /* top: -1px; */
 }
@@ -173,22 +187,30 @@ td {
     margin-top: 10px;
 }
 
-.modal {
-    display: none;
-    border: 5px solid black;
-    width: 100px;
-    margin: auto;
-    margin-top: 10px;
-}
-
 .safe-click {
     margin-top: -15px;
+}
+
+.safe-click span {
+    background-color: rgb(245, 166, 47);
 }
 
 .lives {
     margin-top: -15px;
 }
 
-footer {
-    margin-top: -10px;
+.lives span {
+    background-color: rgb(239, 174, 174);
 }
+
+.modal {
+    display: none;
+    border: 5px solid black;
+    width: 100px;
+    margin: auto;
+    margin-top: -15px;
+}
+
+/* footer {
+    margin-top: -10px;
+} */
